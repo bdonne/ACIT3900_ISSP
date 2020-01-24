@@ -1,10 +1,10 @@
 # ACIT3900_ISSP
 Restricted Boot Resource
 
-The preseed file is compatible with amd64 debian which can be obtained from https://www.debian.org/CD/http-ftp/
-The official CD image is the .iso used
+REQUIREMENTS:
+The preseed file is compatible with amd64 debian which can be obtained from the website posted, download the debian-10.2.0-amd64-xfce-CD-1.iso file (639M)
 
-Once you have the .iso image you must mount it and extract all the files to a directory and name the directory "isofiles"
+Linux interpreter to run the Script file. Must have 
 
 Place the preseed file, the script file, and the isofiles directory in the same directory to run the script file successfully
 
