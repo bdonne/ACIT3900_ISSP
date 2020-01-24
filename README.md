@@ -4,8 +4,10 @@ Restricted Boot Resource
 REQUIREMENTS:
 The preseed file is compatible with amd64 debian which can be obtained from the website posted, download the debian-10.2.0-amd64-xfce-CD-1.iso file (639M)
 
-Linux interpreter to run the Script file. Must have 
+Linux interpreter to run the Script file.
 
-Place the preseed file, the script file, and the isofiles directory in the same directory to run the script file successfully
+PROCESS:
 
-The script file will add the preseed file and return a new iso image. This image can be used to install the debian OS.
+Place the preseed file, the script file, and the iso file you downloaded into a directory of your choice.
+
+The script file will extract the iso image, edit it, then repack it into a new iso image with the preseed embedded. The new iso image may then be used to install debian.

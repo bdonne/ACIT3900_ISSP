@@ -24,3 +24,4 @@ md5sum `find -follow -type f` > md5sum.txt
 chmod -w md5sum.txt
 cd ..
 genisoimage -r -J -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o preseed-debian-10.2.0-i386-netinst.iso isofiles
+rm debian-10.2.0-amd64-xfce-CD-1.iso
