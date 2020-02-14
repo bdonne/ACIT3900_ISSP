@@ -6,7 +6,7 @@ The preseed file is compatible with amd64 debian which can be obtained from http
 
 The script file currently only runs on Debian distributions.
 
-PROCESS:
+DEBIAN PRESEED PROCESS:
 
 Place the preseed file, the script file, and the iso file you downloaded together into a directory of your choice.
 
