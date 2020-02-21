@@ -1,0 +1,45 @@
+# Step-by-step instruction of kiosk system
+# [IMPORTANT!] Remember to set a proper password to Admin account after
+# Default password for Student is 'Password', you can update it by Admin
+# Author: Jun
+
+1) We are using Ubuntu 19.0 and after to config this kiosk system, please install the lastest Ubuntun from: https://ubuntu.com/download/desktop/thank-you?country=CA&version=19.10&architecture=amd64
+
+2) Install the system and make sure it can access to the internet
+
+3) Login System account and change your user name to 'Admin'
+   * Ubuntu -> settings -> Users -> rename your username to 'Admin'
+
+4) Copy "Kiosk_Config" folder and all files to your home directory
+
+5) Run 'kiosk_setup_1.sh' as root to preconfig the system and get all necessary softwares installed
+
+6) Login as Student
+
+7) Chromium - Setup Default Browser: 
+   * Lanch Chromium browser from GUI
+   * Settings -> Defualt Browser -> enable
+
+8) Chromium - Setup Homepage:
+   * Lanch Chromium browser from GUI
+   * Settings -> find the 'On Start-up' section
+   * Choose 'Open a specific page or set of pages'
+   * Choose 'Add a new page'
+   * Input 'learn.bcit.ca'
+
+9) Chromium - Disable auto-fill
+   * Lanch Chromium browser from GUI
+   * Settings -> find the 'Auto-fill' section 
+   * Disable all available options in this section (password/payment method/address)
+
+10) Disable all shortcuts
+   * Ubuntu -> devices -> keyboard shortcuts(you can directly search 'keyboard')
+   * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, In a kiosk system, close the browser window will automatically logout from the system.
+
+11) Logout from student and login as Admin
+12) Go to Ubuntu -> settings -> Users, choose "Student" account
+13) On the top of Users window, click "Unlock" and provide your admin password
+14) Turn on 'auto-login' for the student account
+15) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
+16) Set a proper password for Admin and you are done
+
