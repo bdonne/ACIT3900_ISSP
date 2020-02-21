@@ -37,9 +37,14 @@
    * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, In a kiosk system, close the browser window will automatically logout from the system.
 
 11) Logout from student and login as Admin
+
 12) Go to Ubuntu -> settings -> Users, choose "Student" account
+
 13) On the top of Users window, click "Unlock" and provide your admin password
+
 14) Turn on 'auto-login' for the student account
+
 15) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
+
 16) Set a proper password for Admin and you are done
 
