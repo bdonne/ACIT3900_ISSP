@@ -7,7 +7,7 @@ apparmor_file="/lib/systemd/system/apparmor.service.d/30_live_mode.conf"
 cd ~/Kiosk_Config/
 # Resolve apparmor issue
 systemctl stop apparmor.service
-if [ ! -x "$apparmor_dir"]; then
+if [ ! -d "$apparmor_dir"]; then
    mkdir -p "$apparmor_dir"
    touch "$apparmor_file"
 fi
