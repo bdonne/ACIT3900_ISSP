@@ -7,34 +7,34 @@
 
 2) Install the system and make sure it can access to the internet
 
-3) Login System account and change your user name to 'Admin'
+3) Login system default account and change your user name to 'Admin'
    * Ubuntu -> settings -> Users -> rename your username to 'Admin'
 
-4) Copy "Kiosk_Config" folder and all files to your home directory
+4) Copy "Kiosk_Config" folder and all its files to your home directory
 
-5) Run 'kiosk_setup_1.sh' as root to preconfig the system and get all necessary softwares installed
+5) Run 'kiosk_setup_1.sh' as root to preconfig the system
 
-6) Login as Student
+6) Now we should have an account called 'Student', let's login as Student
 
 7) Chromium - Setup Default Browser: 
-   * Lanch Chromium browser from GUI
+   * Launch Chromium browser
    * Settings -> Defualt Browser -> enable
 
 8) Chromium - Setup Homepage:
-   * Lanch Chromium browser from GUI
+   * Launch Chromium browser
    * Settings -> find the 'On Start-up' section
    * Choose 'Open a specific page or set of pages'
    * Choose 'Add a new page'
    * Input 'learn.bcit.ca'
 
 9) Chromium - Disable auto-fill
-   * Lanch Chromium browser from GUI
+   * Launch Chromium browser
    * Settings -> find the 'Auto-fill' section 
    * Disable all available options in this section (password/payment method/address)
 
 10) Disable all shortcuts
    * Ubuntu -> devices -> keyboard shortcuts(you can directly search 'keyboard')
-   * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, In a kiosk system, close the browser window will automatically logout from the system.
+   * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, in the kiosk system, close the browser window will automatically logout from the system.
 
 11) Logout from student and login as Admin
 
@@ -46,5 +46,5 @@
 
 15) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
 
-16) Set a proper password for Admin and you are done
+16) Set a proper password for Admin and you are ready to go
 
