@@ -13,35 +13,31 @@
 
 5) Now we should have an account called 'Student', let's login as Student
 
-6) Chromium - Setup Default Browser: 
-   * Launch Chromium browser
-   * Settings -> Defualt Browser -> enable
-
-7) Chromium - Setup Homepage:
+6) Chromium - Setup Homepage:
    * Launch Chromium browser
    * Settings -> find the 'On Start-up' section
    * Choose 'Open a specific page or set of pages'
    * Choose 'Add a new page'
    * Input 'learn.bcit.ca'
 
-8) Chromium - Disable auto-fill
+7) Chromium - Disable auto-fill
    * Launch Chromium browser
    * Settings -> find the 'Auto-fill' section 
    * Disable all available options in this section (password/payment method/address)
 
-9) Disable all shortcuts
+8) Disable all shortcuts
    * Ubuntu -> devices -> keyboard shortcuts(you can directly search 'keyboard')
    * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, in the kiosk system, close the browser window will automatically logout from the system.
 
-10) Logout from student and login as Admin
+9) Logout from student and login as Admin
 
-11) Go to Ubuntu -> settings -> Users, choose "Student" account
+10) Go to Ubuntu -> settings -> Users, choose "Student" account
 
-12) On the top of Users window, click "Unlock" and provide your admin password
+11) On the top of Users window, click "Unlock" and provide your admin password
 
-13) Turn on 'auto-login' for the student account
+12) Turn on 'auto-login' for the student account
 
-14) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
+13) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
 
-15) Set a proper password for Admin and you are ready to go
+14) Set a proper password for Admin and you are ready to go
 
