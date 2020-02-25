@@ -23,7 +23,7 @@ add-apt-repository multiverse
 apt-get update
 
 # Change current user name to 'Admin'
-#usermod -l Admin -d /home/Admin/ -m "$USER"
+usermod -c 'Admin' "$USER"
 
 # Add a new user 'Student'
 stu_ac_exists=grep -c 'Student:' /etc/passwd
