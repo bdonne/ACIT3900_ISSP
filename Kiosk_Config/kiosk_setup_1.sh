@@ -36,3 +36,5 @@ fi
 apt-get install chromium-browser
 update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/chromium-browser 200
 
+# Set Chromium as default brower for student A/C
+sudo -H -u Student bash -c 'xdg-settings set default-web-browser chromium_chromium.desktop'
