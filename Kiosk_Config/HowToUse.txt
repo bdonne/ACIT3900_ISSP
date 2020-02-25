@@ -7,44 +7,41 @@
 
 2) Install the system and make sure it can access to the internet
 
-3) Login system default account and change your user name to 'Admin'
-   * Ubuntu -> settings -> Users -> rename your username to 'Admin'
+3) Copy "Kiosk_Config" folder and all its files to your home directory
 
-4) Copy "Kiosk_Config" folder and all its files to your home directory
+4) Run 'kiosk_setup_1.sh' as root to preconfig the system
 
-5) Run 'kiosk_setup_1.sh' as root to preconfig the system
+5) Now we should have an account called 'Student', let's login as Student
 
-6) Now we should have an account called 'Student', let's login as Student
-
-7) Chromium - Setup Default Browser: 
+6) Chromium - Setup Default Browser: 
    * Launch Chromium browser
    * Settings -> Defualt Browser -> enable
 
-8) Chromium - Setup Homepage:
+7) Chromium - Setup Homepage:
    * Launch Chromium browser
    * Settings -> find the 'On Start-up' section
    * Choose 'Open a specific page or set of pages'
    * Choose 'Add a new page'
    * Input 'learn.bcit.ca'
 
-9) Chromium - Disable auto-fill
+8) Chromium - Disable auto-fill
    * Launch Chromium browser
    * Settings -> find the 'Auto-fill' section 
    * Disable all available options in this section (password/payment method/address)
 
-10) Disable all shortcuts
+9) Disable all shortcuts
    * Ubuntu -> devices -> keyboard shortcuts(you can directly search 'keyboard')
    * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, in the kiosk system, close the browser window will automatically logout from the system.
 
-11) Logout from student and login as Admin
+10) Logout from student and login as Admin
 
-12) Go to Ubuntu -> settings -> Users, choose "Student" account
+11) Go to Ubuntu -> settings -> Users, choose "Student" account
 
-13) On the top of Users window, click "Unlock" and provide your admin password
+12) On the top of Users window, click "Unlock" and provide your admin password
 
-14) Turn on 'auto-login' for the student account
+13) Turn on 'auto-login' for the student account
 
-15) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
+14) Run 'kiosk_setup_2.sh' as root to auto-config the Chromium browser into a kiosk system
 
-16) Set a proper password for Admin and you are ready to go
+15) Set a proper password for Admin and you are ready to go
 
