@@ -3,15 +3,16 @@
 # Default password for Student is 'Password', you can update it by Admin
 # Author: Jun
 
-1) We are using Ubuntu 19.0 and after to config this kiosk system, please install the lastest Ubuntun from: https://ubuntu.com/download/desktop/thank-you?country=CA&version=19.10&architecture=amd64
+1) We are using Ubuntu 19.0 and after to config this kiosk system, please install the lastest Ubuntu from: https://ubuntu.com/download/desktop/thank-you?country=CA&version=19.10&architecture=amd64
+  This also works on Ubuntu 18.04 LTS
 
-2) Install the system and make sure it can access to the internet
+2) Install the system and make sure you have access to the internet
 
 3) Copy "Kiosk_Config" folder and all its files to your home directory
 
 4) Run 'kiosk_setup_1.sh' as root to preconfig the system
 
-5) Now we should have an account called 'Student', let's login as Student
+5) Now we should have an account called 'Student'; login as Student
 
 6) Chromium - Setup Homepage:
    * Launch Chromium browser
@@ -27,7 +28,7 @@
 
 8) Disable all shortcuts
    * Ubuntu -> devices -> keyboard shortcuts(you can directly search 'keyboard')
-   * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout from the kiosk system, in the kiosk system, close the browser window will automatically logout from the system.
+   * [Important] disable all shortcuts EXCEPT "Close Window" option with default hotkey "Alt + F4" as this is the only way you logout        from the kiosk system, in the kiosk system, close the browser window will automatically logout from the system.
 
 9) Logout from student and login as Admin
 
