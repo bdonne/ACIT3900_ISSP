@@ -1,5 +1,6 @@
 #!/bin/bash
-# Config current Ubuntu into a Kiosk System, Jun
+# Config current Ubuntu into a Kiosk System
+# Author: Jun.C
 
 apparmor_dir="/lib/systemd/system/apparmor.service.d/"
 apparmor_file="/lib/systemd/system/apparmor.service.d/30_live_mode.conf"
@@ -38,3 +39,21 @@ update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/chro
 
 # Set Chromium as default brower for student A/C
 sudo -H -u Student bash -c 'xdg-settings set default-web-browser chromium_chromium.desktop'
+
+# Disable all shortcuts
+sudo -H -u Student gsettings list-keys org.gnome.settings-daemon.plugins.media-keys | xargs -I@ gsettings set org.gnome.settings-daemon.plugins.media-keys @ ['']
+
+sudo -H -u Student gsettings list-keys org.gnome.desktop.wm.keybindings | xargs -I@ gsettings set org.gnome.desktop.wm.keybindings @ ['']
+
+sudo -H -u Student gsettings list-keys org.gnome.shell.keybindings | xargs -I@ gsettings set org.gnome.shell.keybindings @ ['']
+
+sudo -H -u Student gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>F4']"
+
+# Auto Login
+cp custom.conf /etc/gdm3/
+
+# Setup xsession for kiosk system under student a/c
+cp ./chromeKiosk.sh /usr/share/xsessions/
+cp ./kiosk.desktop /usr/share/xsessions/
+cp ./Student /var/lib/AccountsService/users/
+
