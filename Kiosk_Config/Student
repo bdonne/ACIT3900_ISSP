@@ -1,8 +1,0 @@
-[User]
-Session=
-XSession=kiosk
-Icon=/home/Student/.face
-SystemAccount=false
-
-[InputSource0]
-xkb=us
