@@ -1,7 +1,7 @@
 [User]
 Session=
-XSession=kiosk
-Icon=/home/Student/.face
+XSession=firefoxKiosk.sh
+Icon=/home/student/.face
 SystemAccount=false
 
 [InputSource0]
