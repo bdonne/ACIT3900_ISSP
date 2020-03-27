@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=bash /usr/share/xsessions/firefoxKiosk.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_CA]=firefoxkiosk
+Name=firefoxkiosk
+Comment[en_CA]=
+Comment=
