@@ -62,6 +62,10 @@ groupadd Admin
 useradd Admin -s /bin/bash -m -g Admin -G sudo
 usermod --password $(openssl passwd -1 Password) Admin
 
+# Rename vagrant to student
+echo "rename vagrant to student"
+usermod -c 'student' vagrant
+
 # Remove current vagrant a/c from sudo and admin group
 echo "removed vagrant from sudo group."
 deluser vagrant sudo
