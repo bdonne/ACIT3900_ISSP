@@ -3,10 +3,10 @@
 # Author: Jun.C
 
 # download all necessary files from git
-sudo wget https://github.com/bdonne/ACIT3900_ISSP/blob/master/Kiosk_conf_2/custom.conf
-sudo wget https://github.com/bdonne/ACIT3900_ISSP/blob/master/Kiosk_conf_2/firefoxKiosk.sh
-sudo wget https://github.com/bdonne/ACIT3900_ISSP/blob/master/Kiosk_conf_2/firefoxKiosk.sh.desktop
-sudo wget https://github.com/bdonne/ACIT3900_ISSP/blob/master/Kiosk_conf_2/vagrant
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/custom.conf
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/firefoxKiosk.sh
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/firefoxKiosk.sh.desktop
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/vagrant
 
 # Auto Login
 sudo echo "Setting up auto login ..."
