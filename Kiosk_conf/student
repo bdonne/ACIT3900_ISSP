@@ -1,8 +1,0 @@
-[User]
-Session=
-XSession=firefoxKiosk.sh
-Icon=/home/student/.face
-SystemAccount=false
-
-[InputSource0]
-xkb=us
