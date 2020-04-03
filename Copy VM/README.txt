@@ -6,7 +6,7 @@
 
     Identify the HDD with the Kiosk.
 
-3. Use vboxmanage clonemedium --format RAW <hddname>.vdi <hddname>.img
+3. Use vboxmanage clonemedium --format RAW "ABSOLUTE PATH\<hddname>.vdi" "ABSOLUTE PATH\<hddname>.img"
 
 4. Identify the location of your USB device in /dev/ using ls -l /dev/disk/by-id/*usb*
 
