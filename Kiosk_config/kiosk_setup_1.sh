@@ -1,4 +1,4 @@
-#!/bin/bash -eux
+#!/bin/bash
 # Config current Ubuntu into a Kiosk System
 # Author: Jun.C
 
