@@ -1,4 +1,4 @@
-This is intended to be run on a Linux system.
+This is intended to be run on a Linux host system. You are required to have Packer on your system.
 
 The packer.sh file will run Packer and input the appropriate commands to create a VirtualBox VM.
 
