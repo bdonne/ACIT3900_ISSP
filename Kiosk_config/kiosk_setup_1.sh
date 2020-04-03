@@ -1,12 +1,12 @@
-#!/bin/bash -eux
+#!/bin/bash
 # Config current Ubuntu into a Kiosk System
 # Author: Jun.C
 
 # download all necessary files from git
-sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/custom.conf
-sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/firefoxKiosk.sh
-sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/firefoxKiosk.sh.desktop
-sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_conf_2/vagrant
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_config/custom.conf
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_config/firefoxKiosk.sh
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_config/firefoxKiosk.sh.desktop
+sudo wget https://raw.githubusercontent.com/bdonne/ACIT3900_ISSP/master/Kiosk_config/vagrant
 
 # Auto Login
 sudo echo "Setting up auto login ..."
