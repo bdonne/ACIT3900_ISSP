@@ -9,3 +9,7 @@ The LTSP contains information and scripts to create a Linux Terminal Server from
 The Copy VM Folder contains only a README at this time due to variables required in the script. The variables for the .vdi name and more importantly the device path for the USB cannot be hard coded. The device path for the USB, if scripted incorrectly, could result in severe data loss.
 
 The Packer Automated Install Folder contains a github repo Chef recipe "Bento" acquired from https://github.com/chef/bento. This is the resource we used as a template for our Automated Ubuntu Kiosk builder as we are unfamiliar with doing this ourselves.
+
+The Kiosk_config folder is used in the Packer Automated Install. Currently the Packer install IS NOT COMPLETE.
+
+The Kiosk_config_in_VM is an alternative to the Packer Automated Install. This project folder can be used to turn any Ubuntu VM into a Kiosk, which may then be replicated or turned into a USB.
